@@ -1,9 +1,7 @@
-# CANN - Compression Algorithm for Neural Network
+# Compression Algorithm for Neural Networks (CANN)
 
-## OVERVIEW
+Directory per tenere traccia dei progressi sul progetto di tesi sugli algoritmi di compressione per reti neurali.
 
-1. *basic_python* : contiene esercizi ed esempi delle funzionalità base di Python
+### FOLDERS OVERVIEW
 
-## HISTORY
-
-> [2018-03-29] Primi esericizi per capire le funzionalità di base di Python
+1. _**basic_python**_ : contiene esercizi ed esempi delle funzionalità base di Python.
