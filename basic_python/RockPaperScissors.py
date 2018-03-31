@@ -27,51 +27,51 @@ def bot_simulate():
 		bot2_move = 'p'
 	return who_wins(bot1_move,bot2_move)
 
-first_command = raw_input('n - Player vs Bot\nv - Player vs Player\nb - Bot vs Bot\nq - quit\nCommand: ')
+first_command = input('n - Player vs Bot\nv - Player vs Player\nb - Bot vs Bot\nq - quit\nCommand: ')
 while first_command != 'q':
 
 	if first_command == 'v':
-		print ""
-		print "r - rock\np - paper\ns - scissors\n"
-		p1_cmd = raw_input("Player 1 move: ")
+		print("")
+		print("r - rock\np - paper\ns - scissors\n")
+		p1_cmd = input("Player 1 move: ")
 		while p1_cmd != 'r' and p1_cmd != 'p' and p1_cmd != 's':
-			p1_cmd = raw_input('Command not allowed. Retry: ')
-		p2_cmd = raw_input("Player 2 move: ")
+			p1_cmd = input('Command not allowed. Retry: ')
+		p2_cmd = input("Player 2 move: ")
 		while p2_cmd != 'r' and p2_cmd != 'p' and p2_cmd != 's':
-			p2_cmd = raw_input('Command not allowed. Retry: ')
-		print ""
+			p2_cmd = input('Command not allowed. Retry: ')
+		print("")
 		res = who_wins(p1_cmd,p2_cmd)
 		if res == 0:
-			print "Draw!"
+			print("Draw!")
 		elif res == 1:
-			print "Player 1 wins!"
+			print("Player 1 wins!")
 		elif res == 2:
-			print "Player 2 wins!"
+			print("Player 2 wins!")
 
 	elif first_command == 'n':
-		print ""
-		print "r - rock\np - paper\ns - scissors\n"
-		p1_cmd = raw_input("Player move: ")
+		print("")
+		print("r - rock\np - paper\ns - scissors\n")
+		p1_cmd = input("Player move: ")
 		while p1_cmd != 'r' and p1_cmd != 'p' and p1_cmd != 's':
-			p1_cmd = raw_input('Command not allowed. Retry: ')
+			p1_cmd = input('Command not allowed. Retry: ')
 		bot_move_int = np.random.randint(3)
 		bot_move = 'r'
 		if bot_move_int == 0:
 			bot_move = 's'
 		elif bot_move_int == 1:
 			bot_move = 'p'
-		print "Bot Move: " + bot_move
-		print ""
+		print("Bot Move: " + bot_move)
+		print("")
 		res = who_wins(p1_cmd,bot_move)
 		if res == 0:
-			print "Draw!"
+			print("Draw!")
 		elif res == 1:
-			print "Player wins!"
+			print("Player wins!")
 		elif res == 2:
-			print "Bot wins!"
+			print("Bot wins!")
 
 	elif first_command == 'b':
-		print ""
+		print("")
 		times = int(input("How many games? "))
 		i,games = 0,{}
 		while i < times:
@@ -87,8 +87,8 @@ while first_command != 'q':
 			else:
 				games[str_res] = 1
 			i += 1
-		print ""
-		print np.array(sorted(games.items(),key=lambda n: n[1], reverse=True)).transpose()
+		print("")
+		print(np.array(sorted(games.items(),key=lambda n: n[1], reverse=True)).transpose())
 
-	print "\n######################################"
-	first_command = raw_input('n - Player vs Bot\nv - Player vs Player\nb - Bot vs Bot\nq - quit\nCommand: ')
+	print("\n######################################")
+	first_command = input('n - Player vs Bot\nv - Player vs Player\nb - Bot vs Bot\nq - quit\nCommand: ')
