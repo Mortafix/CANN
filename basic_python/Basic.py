@@ -19,11 +19,11 @@ years = [1941, 1962, None, None, 1941,
 ## association and sorting
 
 couples,i = [],0
-for i in xrange(0,len(names)):
+for i in range(0,len(names)):
   couples += [(names[i],years[i])]
 couples.sort(key=lambda n:n[0][1]) # sorting alphabetically (second letter)
 couples = [(n,y) for (n,y) in couples if y and y > 1960] # removing None and filter
-print couples
+print(couples)
          
 ## function decleration
 
@@ -37,7 +37,7 @@ def abs_freq(seq):
         counts[i] = 1
   return sorted(counts.items(), key=lambda n : n[1], reverse=True)
 
-print np.array(abs_freq(years)).transpose()
+print(np.array(abs_freq(years)).transpose())
 
 ## plot and graphic
 
@@ -62,12 +62,13 @@ def abs_freq_with_name(seq_name,seq_year):
       counts[y] = [seq_name[i] for i in get_indexes(years,y)]
   return counts
 
-print abs_freq_with_name(names,years)[1941]
+print(abs_freq_with_name(names,years)[1941])
 
 def print_films_after_year(films,year):
+  del films[None]
   for (y,n) in sorted(films.items()):
     if y > year:
       for i in films[y]:
-        print i+" ("+str(y)+")"
+        print(i+" ("+str(y)+")")
 
 print_films_after_year(abs_freq_with_name(names,years),1970)
