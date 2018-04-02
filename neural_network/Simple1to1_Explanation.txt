@@ -1,0 +1,57 @@
+#################
+#   PROCEDURE   #
+#################
+
+1) INPUT
+2) OUPUT
+3) WEIGHTS
+4) LEVEL_1 -> sigmoid(INPUT . PESI)
+5) ERROR -> OUTPUT - LEVEL_1
+6) DELTA -> ERROR * sigmoid_derivate(LEVEL_1)
+7) NEW_WEIGHTS -> WEIGHT + (INPUT . DELTA)
+
+###############
+#   EXAMPLE   #
+###############
+
+1) INPUT
+	0	0	1
+	0	1	1
+	1	0	1
+	1	1	1
+
+2) OUPUT
+	0
+	0
+	1
+	1
+
+3) WEIGHTS
+	0.5
+	0.5
+	0.5
+
+4) LEVEL_1 -> sigmoid(INPUT . PESI)
+	0.62245933
+	0.73105858
+	0.73105858
+	0.81757448
+
+5) ERROR -> OUTPUT - LEVEL_1
+	-0.62245933
+	0.73105858
+	0.26894142
+	0.18242552
+
+6) DELTA -> ERROR * sigmoid_derivate(LEVEL_1)
+	-0.14628025
+	-0.14373484
+	0.05287709
+	0.02720812
+
+7) NEW_WEIGHTS -> WEIGHT + (INPUT . DELTA)
+	0.58008521
+	0.38347328
+	0.29007012
+
+
