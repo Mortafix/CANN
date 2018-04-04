@@ -48,10 +48,10 @@ while i < loop_n and not goal(l1,perc):
 	l0 = x
 	l1 = sigmoid(np.dot(l0,wei0))
 
-	# error from output (how much we missed)
+	# Error from output (how much we missed)
 	l1_error = y - l1
 
-	# multiply error by derivate of the sigmoid at the values in l1 (how much we have to change the weights)
+	# Multiply error by derivate of the sigmoid at the values in l1 (how much we have to change the weights)
 	l1_delta = l1_error * sigmoid(l1,True)
 
 	# Update weights
