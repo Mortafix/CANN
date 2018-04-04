@@ -1,11 +1,11 @@
-# CANN - Compression Algorithm for Neural Networks
+# CANN - Compression Algorithms for Neural Networks
 
-Directory per tenere traccia dei progressi sul progetto di tesi sugli algoritmi di compressione per reti neurali.
+Directory for tracking progress in the thesis project on compression algorithms for neural networks.
 
 ## OVERVIEW
 
-1. _**basic_python**_ : contiene esercizi ed esempi delle funzionalità base di Python.
-2. _**neural_network**_ : contiene esercizi ed esempi sulle reti neurali.
+1. _**basic_python**_ : exercises and examples of basic Python functionality.
+2. _**neural_network**_ : exercises and examples of neural networks.
 
 ## REQUIREMENTS
  
