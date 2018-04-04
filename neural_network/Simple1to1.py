@@ -39,8 +39,7 @@ x = np.array([[0,0,1],[0,1,1],[1,0,1],[1,1,1]])
 y = np.array([[0,0,1,1]]).transpose()
  
 # Initialize weights
-#wei0 = np.random.random((3,1)) # random weights
-wei0 = np.array([[0.5,0.5,0.5]]).transpose()
+wei0 = np.random.random((3,1)) # random weights
 
 i,l1 = 0,[0,0,0,0] 
 while i < loop_n and not goal(l1,perc):
