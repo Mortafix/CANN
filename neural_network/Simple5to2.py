@@ -20,13 +20,10 @@ def sigmoid(x,deriv=False):
 
 # Analyze if goal is reached
 def goal(w,p):
-	res = True
-	for i in range(0,len(w[0])):
-		if goal_perc(w[0][i],y[i][0],p):
-			res = False
-		if goal_perc(w[1][i],y[i][1],p):
-			res = False
-	return res
+	for i in range(len(w)):
+		if goal_perc(w[i][0],y[i][0],p) or goal_perc(w[i][1],y[i][1],p):
+			return False
+	return True
 
 # Single weight test
 def goal_perc(w,o,p):
@@ -36,7 +33,7 @@ def goal_perc(w,o,p):
 		return w > (1-p)
  
 # Times of loop and Percentage goal
-loop_n,perc = 100000,0.99
+loop_n,perc = 100000,0.996
  
 # Input
 x = np.array([[0,0,1,1,0],[0,1,1,0,0],[0,0,1,1,1],[0,1,1,0,0],[1,0,0,1,0],[1,1,0,0,0],[1,0,1,0,0],[1,1,0,1,0]])
@@ -51,7 +48,7 @@ wei2 = 2*np.random.random((8,8))-1
 wei3 = 2*np.random.random((8,8))-1
 wei4 = 2*np.random.random((8,2))-1
  
-i,l5 = 0,[[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0]] 
+i,l5 = 0,[[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]]
 while i < loop_n and not goal(l5,perc):
 
 	# Forward propagation
@@ -85,9 +82,9 @@ while i < loop_n and not goal(l5,perc):
 
 	i += 1
 
-res = []
 bool_res = goal(l5,perc)
 print("Output:")
+np.set_printoptions(suppress=True)
 print(l5)
 if(bool_res):
 	print(str(i)+" times for a "+str(perc*100)+"% win rate")
