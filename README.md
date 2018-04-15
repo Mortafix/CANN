@@ -4,8 +4,9 @@ Directory for tracking progress in the thesis project on compression algorithms 
 
 ## OVERVIEW
 
-1. _**basic_python**_ : exercises and examples of basic Python functionality.
-2. _**neural_network**_ : exercises and examples of neural networks.
+1. _**basic_python**_ : learning Python.
+2. _**neural_network**_ : building simple neural networks.
+3. _**tensorflow**_ : understanding TensorFlow and machine learning.
 
 ## REQUIREMENTS
  
@@ -29,3 +30,6 @@ Directory for tracking progress in the thesis project on compression algorithms 
  
 **Jupyter [4.4]**  
 `pip3 install jupyter`
+
+**TensorFlow [1.7]**  
+`pip3 install tensorflow`
