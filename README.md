@@ -10,7 +10,7 @@ Directory for tracking progress in the thesis project on compression algorithms 
 
 ## REQUIREMENTS
  
-**Python 3 [3.6.5] and PIP 3 [9.0.3]**  
+**Python 3 [3.6.5] and PIP 3 [10.0]**  
 `brew install python3`
  
 **NumPy [1.14.2]**  
@@ -19,6 +19,12 @@ Directory for tracking progress in the thesis project on compression algorithms 
 **SciPy [1.0.1]**  
 `pip3 install scipy`
  
+**MatPlotLib [2.2.2]**  
+`pip3 install matplotlib`
+
+**Pandas [0.22]**  
+`pip3 install pandas`
+
 **SciKit-Learn [0.19.1]**  
 `pip3 install scikit-learn`
    
@@ -33,3 +39,6 @@ Directory for tracking progress in the thesis project on compression algorithms 
 
 **TensorFlow [1.7]**  
 `pip3 install tensorflow`
+
+**Seaborn [0.8.1]**  
+`pip3 install seaborn`
