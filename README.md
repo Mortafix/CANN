@@ -13,32 +13,22 @@ Directory for tracking progress in the thesis project on compression algorithms 
 **Python 3 [3.6.5] and PIP 3 [10.0]**  
 `brew install python3`
  
-**NumPy [1.14.2]**  
-`pip3 install numpy`  
 
+### Python modules from PIP 3
+
+`pip3 install <module_name>`  
+
+**NumPy [1.14.2]**   
 **SciPy [1.0.1]**  
-`pip3 install scipy`
- 
 **MatPlotLib [2.2.2]**  
-`pip3 install matplotlib`
-
 **Pandas [0.22]**  
-`pip3 install pandas`
-
 **SciKit-Learn [0.19.1]**  
-`pip3 install scikit-learn`
-   
 **iPython [6.3]**  
-`pip3 install ipython`
- 
 **iPhyton notebook**  
-`pip3 install ipython notebook`
- 
 **Jupyter [4.4]**  
-`pip3 install jupyter`
-
 **TensorFlow [1.7]**  
-`pip3 install tensorflow`
-
 **Seaborn [0.8.1]**  
-`pip3 install seaborn`
+**OpenCV [3.4.0.12]** (opencv-python)  
+**TQDM [4.23]**  
+**TFLearn [0.3.2]**  
+**H5py [2.7.1]**
