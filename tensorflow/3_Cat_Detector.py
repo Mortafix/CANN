@@ -15,7 +15,7 @@ MODEL_NAME = 'cats_dogs_convnet'
 
 # Loading data
 train_data = np.load('data/cats_dogs/cats_dogs_train.npy')
-test_data = np.load('data/cats_dogs/cats_dogs_test_hoby.npy')
+test_data = np.load('data/cats_dogs/cats_dogs_test.npy')
 train = train_data[:-500]
 test = train_data[-500:]
 X_train = np.array([i[0] for i in train]).reshape(-1, IMG_SIZE, IMG_SIZE, 1)
