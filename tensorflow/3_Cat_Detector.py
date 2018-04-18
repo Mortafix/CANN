@@ -15,7 +15,7 @@ MODEL_NAME = 'cats_dogs_convnet'
 
 # Loading data
 train_data = np.load('data/cats_dogs/cats_dogs_train.npy')
-test_data = np.load('data/cats_dogs/cats_dogs_test.npy')
+test_data = np.load('data/cats_dogs/cats_dogs_test_hoby.npy')
 train = train_data[:-500]
 test = train_data[-500:]
 X_train = np.array([i[0] for i in train]).reshape(-1, IMG_SIZE, IMG_SIZE, 1)
@@ -45,9 +45,9 @@ convnet = regression(convnet, optimizer='adam', learning_rate=LR, loss='categori
 model = tflearn.DNN(convnet, tensorboard_dir='log', tensorboard_verbose=0)
 model.fit({'input': X_train}, {'targets': y_train}, n_epoch=10,validation_set=({'input': X_test}, {'targets': y_test}),snapshot_step=500, show_metric=True, run_id=MODEL_NAME)
 
-# Som predictions
+# Some predictions
 fig=plt.figure(figsize=(16, 12))
-for num, data in enumerate(test_data[1000:1016]):  
+for num, data in enumerate(test_data[:16]):  
     img_num = data[1]
     img_data = data[0]
     y = fig.add_subplot(4, 4, num+1)
