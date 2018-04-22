@@ -2,9 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from pylab import rcParams
-from preprocessing import *
 from math import *
-from pandas.plotting import *
 
 # Settings
 sns.set(style='whitegrid', palette='muted', font_scale=1.5)
