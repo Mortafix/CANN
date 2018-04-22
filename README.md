@@ -31,4 +31,5 @@ Directory for tracking progress in the thesis project on compression algorithms 
 **OpenCV [3.4.0.12]** (opencv-python)  
 **TQDM [4.23]**  
 **TFLearn [0.3.2]**  
-**H5py [2.7.1]**
+**H5py [2.7.1]**  
+**Keras [2.1.5]**
