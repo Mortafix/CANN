@@ -52,12 +52,12 @@ model.add(LSTM(128, input_shape=(SEQUENCE_LENGTH, len(chars))))
 model.add(Dense(len(chars)))
 model.add(Activation('softmax'))
 optimizer = RMSprop(lr=0.01)
-#model.compile(loss='categorical_crossentropy', optimizer=optimizer, metrics=['accuracy'])
-#history = model.fit(X, y, validation_split=0.05, batch_size=128, epochs=20, shuffle=True).history
+model.compile(loss='categorical_crossentropy', optimizer=optimizer, metrics=['accuracy'])
+history = model.fit(X, y, validation_split=0.05, batch_size=128, epochs=20, shuffle=True).history
 
 # Saving progress (slow training)
-#model.save('keras_model.h5')
-#pickle.dump(history, open("lp_history.p", "wb"))
+model.save('keras_model.h5')
+pickle.dump(history, open("lp_history.p", "wb"))
 model = load_model('dump/books/keras_model.h5')
 history = pickle.load(open("dump/books/fn_history.p", "rb"))
 
@@ -68,7 +68,7 @@ plt.title('model accuracy')
 plt.ylabel('accuracy')
 plt.xlabel('epoch')
 plt.legend(['train', 'test'], loc='upper left')
-#plt.show()
+plt.show()
 
 plt.plot(history['loss'])
 plt.plot(history['val_loss'])
@@ -76,7 +76,7 @@ plt.title('model loss')
 plt.ylabel('loss')
 plt.xlabel('epoch')
 plt.legend(['train', 'test'], loc='upper left')
-#plt.show()
+plt.show()
 
 
 # PREDICTION MODEL
