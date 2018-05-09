@@ -1,3 +1,6 @@
+![](https://img.shields.io/badge/Language-Python3-blue.svg)
+![](https://img.shields.io/badge/Status-In_progress-yellow.svg)
+
 # CANN - Compression Algorithms for Neural Networks
 
 Directory for tracking progress in the thesis project on compression algorithms for neural networks.
