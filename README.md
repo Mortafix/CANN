@@ -10,6 +10,7 @@ Directory for tracking progress in the thesis project on compression algorithms 
 1. _**basic_python**_ : learning Python.
 2. _**neural_network**_ : building simple neural networks.
 3. _**tensorflow**_ : understanding TensorFlow and machine learning.
+4. _**compression_algorithms**_ : compression algorithms for neural network.
 
 ## REQUIREMENTS
  
