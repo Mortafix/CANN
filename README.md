@@ -55,7 +55,7 @@ conda activate cann
 conda install tensorflow
 conda install keras
 
-# Lunch Jupyter notebook
+# Launch Jupyter notebook
 jupyter notebook
 
 # Deactivate the environment
