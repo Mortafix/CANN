@@ -1,0 +1,59 @@
+{
+	"data": [
+	{
+		"weight-sharing": false,
+		"neurons": 300,
+		"batch-percentage": 1,
+		"stop-function": 1,
+		"stop-parameter": 3,
+		"learning-rate": 0,
+		"epochs": 26,
+		"time": 16,
+		"accuracy": 0.9731
+	},
+	{
+		"weight-sharing": true,
+		"neurons": 300,
+		"batch-percentage": 1,
+		"stop-function": 1,
+		"stop-parameter": 2,
+		"learning-rate": 0,
+		"epochs": 3,
+		"time": 110,
+		"accuracy": 0.9703
+	},
+	{
+		"weight-sharing": true,
+		"neurons": 300,
+		"batch-percentage": 1,
+		"stop-function": 1,
+		"stop-parameter": 2,
+		"learning-rate": 1,
+		"epochs": 5,
+		"time": 180,
+		"accuracy": 0.9732
+	},
+	{
+		"weight-sharing": true,
+		"neurons": 300,
+		"batch-percentage": 1,
+		"stop-function": 1,
+		"stop-parameter": 2,
+		"learning-rate": 2,
+		"epochs": 2,
+		"time": 75,
+		"accuracy": 0.9739
+	}
+	],
+	"comment" : {
+		"weight-sharing": "true/false: if weight sharing is used in the network",
+		"neurons": "number of neurons",
+		"batch-percentage": "% of dataset is used",
+		"stop-function": "0: stop after n epochs.  1: stop after n epochs w/o improvements.  2: stop after an improvements below n",
+		"stop-parameter": "n of stop function",
+		"learning-rate": "0: 1/sqrt(iteration + 10).  1: 1/(iteration + 10).  2: 1/(iteration + 100).",
+		"epochs": "number of epochs to reach max accuracy",
+		"time": "time to reach max accuracy",
+		"accuracy": "max accuracy reach in train"
+	}
+}

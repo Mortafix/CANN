@@ -1,0 +1,88 @@
+{
+	"data": [
+	{
+		"weight-sharing": true,
+		"neurons": 300,
+		"batch-percentage": 1,
+		"clusters": 256,
+		"stop-function": 1,
+		"stop-parameter": 2,
+		"connection": 0.6,
+		"epochs": 11,
+		"time": 42,
+		"accuracy": 0.8119
+	},
+	{
+		"weight-sharing": true,
+		"neurons": 300,
+		"batch-percentage": 1,
+		"clusters": 256,
+		"stop-function": 1,
+		"stop-parameter": 2,
+		"connection": 0.75,
+		"epochs": 6,
+		"time": 21,
+		"accuracy": 0.5891
+	},
+	{
+		"weight-sharing": true,
+		"neurons": 300,
+		"batch-percentage": 1,
+		"clusters": 256,
+		"stop-function": 1,
+		"stop-parameter": 2,
+		"connection": 0.8,
+		"epochs": 3,
+		"time": 11,
+		"accuracy": 0.1825
+	},
+	{
+		"weight-sharing": true,
+		"neurons": 300,
+		"batch-percentage": 1,
+		"clusters": 256,
+		"stop-function": 1,
+		"stop-parameter": 2,
+		"connection": 0.9,
+		"epochs": 7,
+		"time": 25,
+		"accuracy": 0.6312
+	},
+	{
+		"weight-sharing": true,
+		"neurons": 300,
+		"batch-percentage": 1,
+		"clusters": 256,
+		"stop-function": 1,
+		"stop-parameter": 2,
+		"connection": 0.94,
+		"epochs": 6,
+		"time": 23,
+		"accuracy": 0.582
+	},
+	{
+		"weight-sharing": true,
+		"neurons": 300,
+		"batch-percentage": 1,
+		"clusters": 256,
+		"stop-function": 1,
+		"stop-parameter": 2,
+		"connection": 0.98,
+		"epochs": 10,
+		"time": 37,
+		"accuracy": 0.677
+	}
+	],
+	"comment" : {
+		"weight-sharing": "true/false: if weight sharing is used in the network",
+		"neurons": "number of neurons",
+		"batch-percentage": "% of dataset is used",
+		"clusters": "number of clusters",
+		"stop-function": "0: stop after n epochs.  1: stop after n epochs w/o improvements.  2: stop after an improvements below n",
+		"stop-parameter": "n of stop function",
+		"connection": "% of connection (pruning)",
+		"epochs": "number of epochs to reach max accuracy",
+		"time": "time to reach max accuracy (minutes)",
+		"accuracy": "max accuracy reach in train"
+	}
+}
