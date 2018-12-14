@@ -61,9 +61,22 @@
 		"stop-parameter": 2,
 		"connection": 0.9,
 		"method_pruning": 0,
-		"epochs": 3,
-		"time": 8,
-		"accuracy": 0.2964
+		"epochs": 7,
+		"time": 20,
+		"accuracy": 0.9666
+	},
+	{
+		"weight-sharing": true,
+		"neurons": 300,
+		"batch-percentage": 1,
+		"clusters": 256,
+		"stop-function": 1,
+		"stop-parameter": 2,
+		"connection": 0.95,
+		"method_pruning": 0,
+		"epochs": 11,
+		"time": 30,
+		"accuracy": 0.9714
 	}
 	],
 	"comment" : {
