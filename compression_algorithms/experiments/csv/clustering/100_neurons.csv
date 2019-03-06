@@ -1,4 +1,5 @@
 Cluster,Compression Rate,Training Time,Acc Training,Acc Testing
+0,0,8m38s,98.77,97.39
 32,12.778,2m7s,11.23,11.33
 48,11.433,5m15s,98.7,97.14
 64,10.636,3m13s,98.24,96.6

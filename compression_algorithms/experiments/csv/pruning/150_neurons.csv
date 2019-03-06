@@ -1,4 +1,5 @@
 Pruning,Compression Rate,Training Time,Acc Training,Acc Testing
+0,0,9m34s,98.88,97.69
 0.1,10.0,11m45s,97.9,97.21
 0.2,5.0,10m22s,98.9,97.85
 0.3,3.33,11m2s,99.16,97.85
